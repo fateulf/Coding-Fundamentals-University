@@ -1,7 +1,7 @@
 # Coding-Fundamentals-University
 A collection of the exercises from my coding fundamentals unit at university.
 
-Access index.html: https://fateulf.github.io/Coding-Fundamentals-University/
+Access index.html: https://fateulf.github.io/Coding-Fundamentals-University/index.html
 
 # About
 This project has all the exercises I had to complete for my coding fundamentals unit at university. The unit was primarily concerned with JavaScript and web development. Due to personal circumstances, I was unable to finish any of my units or attend the classes for the semester, so instead I chose to go through the weekly modules to complete them in my own time after the unit was over.
