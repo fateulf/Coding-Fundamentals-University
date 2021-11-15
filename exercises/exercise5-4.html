@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Largest Number</title>
+    </head>
+    <body>
+        <script>
+            var largest = 0; //Largest number entered by user
+
+            for (i = 1; i <= 5; i++) {
+            var number = prompt("Please enter a positive number.", "");
+            number = parseFloat(number);
+            
+                while (number <= 0) {
+                    number = prompt("The number you entered is invalid. Please enter a positive number.", "");
+                    number = parseFloat(number);
+                }
+
+                if (number > largest) {
+                    largest = number;
+                }
+            }
+            document.writeln("<p>The largest number you entered is " + largest + ".</p>")
+        </script>
+    </body>
+</html>

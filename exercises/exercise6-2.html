@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallons to Litres</title>
+        <script>
+            var gallons;
+            var litres;
+
+            function gallonToLitres(volume) {
+                return (4.5 * volume);
+            }
+        </script>
+    </head>
+    <body>
+        <script>
+            gallons = prompt("Enter a volume in gallons.", "");
+            gallons = parseFloat(gallons)
+
+            while (gallons < 0) {
+                gallons = prompt("Invalid entry. Enter a volume in gallons.", "")
+                gallons = parseFloat(gallons)
+            }
+
+            litres = gallonToLitres(gallons);
+            alert(gallons + " gallons is " + litres + " litres.");
+        </script>
+    </body>
+</html>

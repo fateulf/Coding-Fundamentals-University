@@ -1,0 +1,41 @@
+<!doctype html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Popular Dog Names</title> 
+    </head> 
+    <body> 
+        <script> 
+            var dogName; // Dog name entered by the user 
+            var match = false; // True if a matching name is found 
+            
+            // Create an array of the 10 most popular dog names in Australia 
+            var popularDogNames = new Array("Bella", "Charlie", "Max", "Ruby", "Molly", "Coco", "Buddy", "Lucy", "Archie", "Daisy"); 
+            
+            // Ask the user to enter a dog name. If no name is supplied, ask 
+            // the user again 
+            dogName = prompt("Guess one of the 10 most popular dog names in Australia.", ""); 
+            
+            while (dogName == null || dogName == "") { 
+                dogName = prompt("That is not a valid name. Guess one of the most popular dog names in Australia.", ""); 
+            } 
+            
+            // Check if the supplied name is on the list of the 10 most 
+            // popular dog names 
+            for (var i = 0; i <= 10; i++) { 
+                if (dogName == popularDogNames[i]) { 
+                    match = true; 
+                } 
+            }
+
+            // Tell the user if the name is one of the 10 most popular dog 
+            // names or not 
+            if (match == true) { 
+                alert(dogName + " is one of the 10 most popular dog names in Australia"); 
+            } 
+            else { 
+                alert(dogName + " is not one of the 10 most popular dog names in Australia."); 
+            } 
+        </script> 
+    </body> 
+</html>

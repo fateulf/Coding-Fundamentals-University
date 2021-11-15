@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8" />
+        <title>Wind Speed for Pesticide</title>
+        <script>
+            var wind; //Contains wind speed in kilometres per hour
+            wind = prompt("Please enter the wind speed in kilometres per hour", "");
+            wind = parseFloat(wind);
+
+            if (wind < 15) {
+                alert("Safe to spray");
+            }
+            else {
+                alert("Unsafe to spray");
+            }
+        </script>
+    </head>
+</html>

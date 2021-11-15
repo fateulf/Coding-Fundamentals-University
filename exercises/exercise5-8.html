@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alternative Medical Dictionary</title>
+    </head>
+    <body>
+        <script>
+            var term = new Array("Artery", "Barium", "Benign", "Dilate", "Enema", "Impotent", "Nitrates", "Varicose");
+            var alt = new Array("The study of paintings", "What doctors do when patients die", "What you be, after you be eight", "To live long", "Not a friend", "Distinguished, well known", "Cheaper than day rates", "Close by");
+            //term = medical terms, alt = alternative meanings
+
+            document.writeln("<table><tr><th>Term</th><th>Alternative Meaning</th></tr>")
+            for (i = 0; i <= term.length - 1; i++) {
+                document.writeln("<tr><td>" + term[i] + "</td><td>" + alt[i] + "</td></tr>")
+            }
+
+            //apparently was just meant to make a normal table without using arrays but this works too
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>Add Shipping Cost</title> 
+    </head> 
+    <body> 
+        <script> 
+            var subtotal; // Price of book before shipping is added 
+            var total; // Price of book after shipping is added 
+            // Read the price of the book and convert it to a float value 
+            subtotal = prompt("Please enter the price of a book without a leading dollar sign.", ""); 
+            subtotal = parseFloat(subtotal);
+        
+         // If the input data is invalid ask the user to re-enter it 
+         while (isNaN(subtotal) || subtotal <= 0) { 
+             subtotal = prompt("That is not a valid price. Please enter the price of a book without a leading dollar sign.", ""); 
+             subtotal = parseFloat(subtotal); // Calculate the price after shipping is added 
+         }
+
+        total = subtotal + 10;  
+
+         // Display the price
+         alert("The total price including shipping is $" + total); 
+        </script> 
+    </body> 
+</html>

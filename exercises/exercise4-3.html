@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf=8" />
+        <title>Tropical Cyclones Category Effects</title>
+        
+        <script>
+            var categoryno; //Cyclone category number
+
+            categoryno = prompt("Please enter a cyclone category number from 1-5", "");
+            categoryno = parseInt(categoryno);
+
+            if ((categoryno >= 1) && (categoryno <= 5)) {
+                if (categoryno == 1) {
+                    alert("A category 1 cyclone will cause negligible house damage.");
+                }
+                else if (categoryno == 2) {
+                    alert("A category 2 cyclone will cause minor house damage.");
+                }
+                else if (categoryno == 3) {
+                    alert("A category 3 cyclone will cause some roof and structural damage.");
+                } else if (categoryno == 4) {
+                    alert("A category 4 cyclone will cause significant roof loss and structural damage.");
+                }                
+                else {
+                    alert("A category 5 cyclone will be extremely dangerous with widespread destruction.");
+                }
+            }
+            else {
+                alert("You entered an invalid number.");
+            }
+        </script>
+    </head>
+</html>

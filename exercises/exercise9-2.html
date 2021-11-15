@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weight Calculator</title>
+    </head>
+    <body>
+        <p>You weigh <span id="replaceText">___</span> pounds.</p> 
+
+        <script>
+            var weight;
+            weight = prompt("Please enter your weight in kilograms.", "");
+            weight = parseFloat(weight);
+
+            while (isNaN(weight) || weight < 0) {
+                weight = prompt("Invalid entry. Please enter your weight in kilograms.", "");
+                weight = parseFloat(weight);
+            }
+
+            weight = weight * 2.2;
+            weight = Math.round(weight);
+
+            document.getElementById("replaceText").innerHTML = weight;
+        </script>
+    </body>
+</html>

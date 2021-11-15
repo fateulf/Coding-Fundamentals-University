@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Rollover</title>
+        <script>
+            var imageArray = new Array(6);
+
+            for (i = 0; i <= imageArray.length - 1; i++) {
+                imageArray[i] = new Image();
+            }
+
+            imageArray[0].src = "bluedog.gif";
+            imageArray[1].src = "reddog.gif";
+            imageArray[2].src = "bluecat.gif";
+            imageArray[3].src = "redcat.gif";
+            imageArray[4].src = "bluebird.gif";
+            imageArray[5].src = "redbird.gif";
+
+            function showImage(imageID, fileName) {
+                var icon;
+                icon = document.getElementById(imageID);
+                icon.src = fileName;
+            }
+        </script>
+    </head>
+    <body>
+        <a href="dog.html" onmouseover="showImage('dog', 'reddog.gif')" onmouseout="showImage('dog', 'bluedog.gif')"><img src="bluedog.gif" 
+        id="dog" alt="Dog" height="100" width="100" /></a><br />
+        <a href="cat.html" onmouseover="showImage('cat', 'redcat.gif')" onmouseout="showImage('cat', 'bluecat.gif')"><img src="bluecat.gif" 
+        id="cat" alt="Cat" height="100" width="100" /></a><br />
+        <a href="bird.html" onmouseover="showImage('bird', 'redbird.gif')" onmouseout="showImage('bird', 'bluebird.gif')"><img src="bluebird.gif" 
+            id="bird" alt="Bird" height="100" width="100" /></a><br />    
+    </body>
+</html>

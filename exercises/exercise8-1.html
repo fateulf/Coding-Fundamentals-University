@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank Account</title>
+    </head>
+    <body>
+        <script>
+            var bankAccount = { customerName: "", bankName: "", balance: 0 };   
+
+            bankAccount.customerName = prompt("Enter your name.", "");
+            while (bankAccount.customerName == "") {
+                bankAccount.customerName = prompt("Invalid entry. Please enter your name.");
+            }
+
+            bankAccount.bankName = prompt("Enter the name of your bank.", "");
+            while (bankAccount.bankName == "") {
+                bankAccount.bankName = prompt("Invalid entry. Please enter the name of your bank.", "")
+            } 
+
+            bankAccount.balance = prompt("Enter the balance for your bank account.", "");
+            bankAccount.balance = parseFloat(bankAccount.balance);
+            while (isNaN(bankAccount.balance) || bankAccount.balance == "") {
+                bankAccount.balance = prompt("Invalid entry. Please enter the balance of your bank account.", "");
+            }
+
+            alert(bankAccount.customerName + " has a bank account with " + bankAccount.bankName + " with a balance of $" + bankAccount.balance + ".");
+        </script>
+    </body>
+</html>
